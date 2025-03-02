@@ -26,7 +26,7 @@ function Navbar1() {
   return (
     <div className="page navbar-1-page">
       <nav className={`navbar-1 ${isVisible ? "visible" : ""} `}>
-      <img src="/src/Navbar1/icon.svg" alt="title-logo" />
+        <img src="/src/Navbar1/icon.svg" alt="title-logo" />
         <div className="nav-items">
           <a href="#">About</a>
           <a href="#">Services</a>
@@ -36,6 +36,6 @@ function Navbar1() {
       </nav>
     </div>
   );
-};
+}
 
 export default Navbar1;

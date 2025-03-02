@@ -62,31 +62,6 @@ a {
   margin-right: 1rem;
 }
 
-.navHub {
-  background-color: var(--nav-background);
-  padding: 10px;
-  position: sticky;
-  top: 0;
-}
-
-.section-nav {
-  color: var(--light-letters);
-  transition: all 0.3s ease;
-  margin: 1rem;
-  cursor: pointer;
-}
-
-.section-nav:hover {
-  color: var(--dark-letters);
-  font: bold;
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-}
-
-/* 
-.navHub select {
-} */
-
 main {
   flex-grow: 1;
   min-height: calc(100vh - var(--header-height));
