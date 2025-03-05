@@ -17,7 +17,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(6, 20, 38, 0.50);
   backdrop-filter: blur(8px); /* Agrega un desenfoque elegante */
   display: flex;
   flex-direction: column;

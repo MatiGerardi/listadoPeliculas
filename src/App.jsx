@@ -1,10 +1,10 @@
-import './App.css';
-import { useState, useEffect } from 'react';
-import ProductList from './ProductCards/ProductList.jsx';
-import Footer from './Footer1/Footer1.jsx';
-import Navbar1 from './Navbar1/Navbar1.jsx';
-import SearchButton from './SearchButton/SearchButton.jsx';
-import { getMovies, createMovie } from './apiBD.js';
+import "./App.css";
+import { useState, useEffect } from "react";
+import ProductList from "./ProductCards/ProductList.jsx";
+import Footer from "./Footer1/Footer1.jsx";
+import Navbar1 from "./Navbar1/Navbar1.jsx";
+import SearchButton from "./SearchButton/SearchButton.jsx";
+import { getMovies } from "./apiBD.js";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -22,20 +22,6 @@ function App() {
     }
   };
 
-  const handleAddMovie = async (movie) => {
-    try {
-      await createMovie({
-        title: movie.Title,
-        year: movie.Year,
-        poster: movie.Poster,
-        type: movie.Type,
-      });
-      fetchMovies();
-    } catch (error) {
-      console.error('Error adding movie:', error);
-    }
-  };
-
   return (
     <>
       <header>
@@ -43,8 +29,9 @@ function App() {
       </header>
 
       <main>
-        <div className='content'>
-          <SearchButton onAddMovie={handleAddMovie} />
+        <div className="content">
+          <SearchButton />
+          {/* <Movies onAddMovie={handleAddMovie} /> */}
           <ProductList movies={movies} />
         </div>
       </main>

@@ -32,6 +32,7 @@
 .navbar-1.visible {
   top: 0;
   translate: 0;
+  border-bottom: 1px solid var(--border);
 }
 
 .navbar-1 .nav-items {
